@@ -1,4 +1,4 @@
-# Manual only. Never run on pull_request (forks must not see the secret).
+# Manual only. Never run on pull_request.
 name: jev-live
 
 on:
@@ -15,10 +15,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: unit tests (no network)
-        run: python3 -m unittest discover -s tests -v
-      - name: offline bench
-        run: python3 -m jevintegrate.bench
       - name: live Jev via Vercel Gateway
         env:
           AI_GATEWAY_API_KEY: ${{ secrets.AI_GATEWAY_API_KEY }}
@@ -28,5 +24,4 @@ jobs:
             echo "secret AI_GATEWAY_API_KEY is empty"
             exit 1
           fi
-          python3 -m jevintegrate smoke
-          python3 -m jevintegrate live
+          python3 scripts/ci_live.py
