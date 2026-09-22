@@ -1,0 +1,17 @@
+{
+  "generated": "2026-09-22",
+  "method": "offline policy bench — chars/4 + fixed tool-schema tokens; no live LLM/Jev calls",
+  "cases": 24,
+  "policy_matches": 24,
+  "policy_match_pct": 100.0,
+  "writer_calls": 13,
+  "writer_skipped": 11,
+  "writer_skip_pct": 45.8,
+  "naive_total_tokens": 336640,
+  "integrate_total_tokens": 71200,
+  "input_reduction_pct": 79.8,
+  "output_reduction_pct": 64.6,
+  "total_reduction_pct": 78.8,
+  "mean_tools_naive": 13.5,
+  "mean_tools_kept": 0.8
+}
