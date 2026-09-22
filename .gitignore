@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.typesafe/
+logs/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.jev-integrate/
+eval/data/
+eval/private/

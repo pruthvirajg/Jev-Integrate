@@ -1,0 +1,11 @@
+{
+  "name": "jev-integrate",
+  "owner": { "name": "pruthvirajg" },
+  "plugins": [
+    {
+      "name": "jev-integrate",
+      "source": "./",
+      "description": "Jev-Integrate: Jev makes the decisions so Claude/Grok spend tokens only on writing."
+    }
+  ]
+}

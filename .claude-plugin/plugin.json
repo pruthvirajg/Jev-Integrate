@@ -1,0 +1,8 @@
+{
+  "name": "jev-integrate",
+  "version": "0.1.0",
+  "description": "Jev decides; Claude, Grok, or any LLM only writes. Prompt routing, subagent tier, rule checks, and compaction without a generated summary.",
+  "author": { "name": "pruthvirajg" },
+  "keywords": ["jev", "typesafe", "system-one", "routing", "compaction", "token-savings", "claude", "grok"],
+  "license": "MIT"
+}

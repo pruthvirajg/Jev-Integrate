@@ -1,0 +1,26 @@
+[project]
+name = "jev-integrate"
+version = "0.1.0"
+description = "Jev decides; Claude, Grok, or any LLM only writes."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "pruthvirajg" }]
+keywords = ["jev", "typesafe", "claude", "grok", "llm", "routing", "tokens"]
+
+[project.scripts]
+jev-integrate = "jevintegrate.cli:main"
+jev = "scripts.jev:main"
+
+[project.urls]
+Homepage = "https://github.com/pruthvirajg/Jev-Integrate"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["jevintegrate*", "scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
