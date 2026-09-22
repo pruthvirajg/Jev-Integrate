@@ -1,0 +1,6 @@
+{
+  "from": "ada@example.com",
+  "subject": "Charged twice for September",
+  "body": "Invoice INV-2041 billed me twice this morning. Please refund the duplicate.",
+  "tools": ["refund_api", "lookup_invoice", "send_email"]
+}
